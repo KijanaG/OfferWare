@@ -1,0 +1,11 @@
+amplify
+build 
+node_modules
+jwtRS256.key
+jwtRS256.key.pub
+config.js
+.env
+LandingPage
+SuccessPage
+.env*
+config*

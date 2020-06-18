@@ -1,0 +1,22 @@
+.RedeemButton {
+    animation: jump 3s;
+}
+
+@keyframes jump {
+    0% {
+        background-color: #fff;
+        box-shadow: none;
+        transform: scale(0.8);
+    }
+
+    90% {
+        background-color: #512da8;
+        transform: scale(1.1);
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: scale(1);
+        transform: rotate(0deg);
+    }
+}

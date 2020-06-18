@@ -1,0 +1,12 @@
+.AnimateWord {
+    animation: wordSize 0.3s;
+}
+
+@keyframes wordSize {
+    0% {
+        font-weight: 900;
+    }
+    100% {
+        font-weight: 500;
+    }
+}
