@@ -6,8 +6,8 @@ const { HTML } = require('./html')
 dotenv.config();
 sgMail.setApiKey(process.env.sendGridKey);
 AWS.config.update({ region: 'us-west-2' });
-const accountSid = 'AC96ffe37f6b9c5170af59cf968ec66816';
-const authToken = 'a260941697d141d4bb3de4b06af9bcd3';
+const accountSid = process.env.TWILIO_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 var docClient = new AWS.DynamoDB.DocumentClient();
 
